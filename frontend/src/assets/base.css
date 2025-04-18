@@ -1,24 +1,54 @@
-/* color palette from <https://github.com/vuejs/theme> */
+/* color palette from custom material3 design */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
-
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
-
-  --vt-c-indigo: #2c3e50;
-
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --color-primary: rgb(0 106 104);
+  --color-surface-tint: rgb(0 106 104);
+  --color-on-primary: rgb(255 255 255);
+  --color-primary-container: rgb(156 241 238);
+  --color-on-primary-container: rgb(0 80 78);
+  --color-secondary: rgb(74 99 98);
+  --color-on-secondary: rgb(255 255 255);
+  --color-secondary-container: rgb(204 232 230);
+  --color-on-secondary-container: rgb(50 75 74);
+  --color-tertiary: rgb(74 96 123);
+  --color-on-tertiary: rgb(255 255 255);
+  --color-tertiary-container: rgb(210 228 255);
+  --color-on-tertiary-container: rgb(50 72 99);
+  --color-error: rgb(186 26 26);
+  --color-on-error: rgb(255 255 255);
+  --color-error-container: rgb(255 218 214);
+  --color-on-error-container: rgb(147 0 10);
+  --color-background: rgb(244 251 249);
+  --color-on-background: rgb(22 29 28);
+  --color-surface: rgb(244 251 249);
+  --color-on-surface: rgb(22 29 28);
+  --color-surface-variant: rgb(218 229 227);
+  --color-on-surface-variant: rgb(63 73 72);
+  --color-outline: rgb(111 121 120);
+  --color-outline-variant: rgb(190 201 199);
+  --color-shadow: rgb(0 0 0);
+  --color-scrim: rgb(0 0 0);
+  --color-inverse-surface: rgb(43 50 49);
+  --color-inverse-on-surface: rgb(236 242 241);
+  --color-inverse-primary: rgb(128 213 210);
+  --color-primary-fixed: rgb(156 241 238);
+  --color-on-primary-fixed: rgb(0 32 31);
+  --color-primary-fixed-dim: rgb(128 213 210);
+  --color-on-primary-fixed-variant: rgb(0 80 78);
+  --color-secondary-fixed: rgb(204 232 230);
+  --color-on-secondary-fixed: rgb(5 31 31);
+  --color-secondary-fixed-dim: rgb(176 204 202);
+  --color-on-secondary-fixed-variant: rgb(50 75 74);
+  --color-tertiary-fixed: rgb(210 228 255);
+  --color-on-tertiary-fixed: rgb(3 28 53);
+  --color-tertiary-fixed-dim: rgb(178 200 232);
+  --color-on-tertiary-fixed-variant: rgb(50 72 99);
+  --color-surface-dim: rgb(213 219 218);
+  --color-surface-bright: rgb(244 251 249);
+  --color-surface-container-lowest: rgb(255 255 255);
+  --color-surface-container-low: rgb(239 245 244);
+  --color-surface-container: rgb(233 239 238);
+  --color-surface-container-high: rgb(227 233 232);
+  --color-surface-container-highest: rgb(221 228 227);
 }
 
 /* semantic color variables for this project */
@@ -38,15 +68,55 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
+    --color-primary: rgb(128 213 210);
+  --color-surface-tint: rgb(128 213 210);
+  --color-on-primary: rgb(0 55 54);
+  --color-primary-container: rgb(0 80 78);
+  --color-on-primary-container: rgb(156 241 238);
+  --color-secondary: rgb(176 204 202);
+  --color-on-secondary: rgb(27 53 52);
+  --color-secondary-container: rgb(50 75 74);
+  --color-on-secondary-container: rgb(204 232 230);
+  --color-tertiary: rgb(178 200 232);
+  --color-on-tertiary: rgb(27 50 75);
+  --color-tertiary-container: rgb(50 72 99);
+  --color-on-tertiary-container: rgb(210 228 255);
+  --color-error: rgb(255 180 171);
+  --color-on-error: rgb(105 0 5);
+  --color-error-container: rgb(147 0 10);
+  --color-on-error-container: rgb(255 218 214);
+  --color-background: rgb(14 21 20);
+  --color-on-background: rgb(221 228 227);
+  --color-surface: rgb(14 21 20);
+  --color-on-surface: rgb(221 228 227);
+  --color-surface-variant: rgb(63 73 72);
+  --color-on-surface-variant: rgb(190 201 199);
+  --color-outline: rgb(136 147 146);
+  --color-outline-variant: rgb(63 73 72);
+  --color-shadow: rgb(0 0 0);
+  --color-scrim: rgb(0 0 0);
+  --color-inverse-surface: rgb(221 228 227);
+  --color-inverse-on-surface: rgb(43 50 49);
+  --color-inverse-primary: rgb(0 106 104);
+  --color-primary-fixed: rgb(156 241 238);
+  --color-on-primary-fixed: rgb(0 32 31);
+  --color-primary-fixed-dim: rgb(128 213 210);
+  --color-on-primary-fixed-variant: rgb(0 80 78);
+  --color-secondary-fixed: rgb(204 232 230);
+  --color-on-secondary-fixed: rgb(5 31 31);
+  --color-secondary-fixed-dim: rgb(176 204 202);
+  --color-on-secondary-fixed-variant: rgb(50 75 74);
+  --color-tertiary-fixed: rgb(210 228 255);
+  --color-on-tertiary-fixed: rgb(3 28 53);
+  --color-tertiary-fixed-dim: rgb(178 200 232);
+  --color-on-tertiary-fixed-variant: rgb(50 72 99);
+  --color-surface-dim: rgb(14 21 20);
+  --color-surface-bright: rgb(52 58 58);
+  --color-surface-container-lowest: rgb(9 15 15);
+  --color-surface-container-low: rgb(22 29 28);
+  --color-surface-container: rgb(26 33 32);
+  --color-surface-container-high: rgb(37 43 43);
+  --color-surface-container-highest: rgb(47 54 54);
   }
 }
 
@@ -60,7 +130,7 @@
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
+  color: var(--color-on-background);
   background: var(--color-background);
   transition:
     color 0.5s,
@@ -83,4 +153,60 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.primary-button {
+  min-width: 64px;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 20px;
+  border: none;
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s, box-shadow 0.2s;
+  
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.primary-button:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 90%, black);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.primary-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 70%, transparent);
+}
+
+.primary-button:active {
+  background-color: color-mix(in srgb, var(--color-primary) 80%, black);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.primary-button.tonal {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.primary-button.tonal:hover {
+  background-color: color-mix(in srgb, var(--color-primary-container) 90%, black);
+}
+
+.primary-button.tonal:active {
+  background-color: color-mix(in srgb, var(--color-primary-container) 80%, black);
 }
